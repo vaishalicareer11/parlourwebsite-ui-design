@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link href="http://65.1.119.181/web_assets/css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://65.1.119.181/web_assets/js/jquery-3.2.1.js"></script>
+  <script src="http://65.1.119.181/web_assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="parlourstyle.css" />
+
+  <title>V@ishali salon|V@ishali salon</title>
+</head>
+
+<body>
+  <!-- navigation-menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="-women-face-logo.jpg" height="100">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav menubar">
+          <li class="nav-item"><a class="nav-link" href="parlour.html">home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">about us</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">services</a></li>
+          <li class="nav-item">
+            <a class="nav-link"  href="booking.html">Booking</a> </li>
+          <li class="nav-item"><a class="nav-link" href="training.html">training</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">contact us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid  "
+    style="background-image:url(http://www.organicbeautyparlour.com/wp-content/uploads/2016/03/header-image-services-1440x500.jpg);">
+    <div class="container">
+      <div class="row pt-5 pb-5">
+        <div class="appointment">
+          <form class="appointment-form form-horizontal form-group mt-3 mb-5" method="POST" action="#" name="book_form"
+             autocomplete="off" onsubmit="return validation()">
+            <h2 class="text-center" style="color:#CC0662;">BE BOLD BE BEAUTIFUL</h2>
+            <h5 class="text-center">GET APPOINTMENT</h5>
+
+            <label for="" class="control-label">First Name:</label>
+            <input class="form-control"  placeholder="Enter your first name" type="text" name="fname" 
+            id="firstname">
+            
+             
+            <label for="" class="control-label">Last Name:</label>
+            <input class="form-control"  placeholder="Enter your last name" type="text" name="lname"
+             id="lastname">
+            
+
+            <label for="" class="control-label">Phone no:</label>
+            <input class="form-control"  placeholder="Mobile(Do not enter +91)" type="text" name="phone" id="mobile">
+            
+
+            <label for="" class="control-label">Email-id:</label>
+            <input class="form-control"  placeholder="Enter your Email" type="text" name="emaill" id="email">
+            
+
+            <label for="" class="control-label">Prefered method of contact:</label>
+            <br>
+            <label class="form-check-label form-check-inline">
+              <input type="radio" class="form-check-input" name="optradio">Email
+            </label>
+            <label class="form-check-label form-check-inline">
+              <input type="radio" class="form-check-input" name="optradio">Phone
+            </label>
+            <label class="form-check-label form-check-inline">
+              <input type="radio" class="form-check-input" name="optradio">Either
+            </label>
+            <br>
+            <label for="">Select Service:</label>
+            <select class="form-control" name="service">
+              <span id="service_error" class="text-danger font-weight-bold"></span>
+              <option>Select Service</option>
+              <option>Manicure & Padicure</option>
+              <option>Nail style</option>
+              <option>Hair style</option>
+              <option>Hair cut</option>
+              <option>facial</option>
+              <option>bridal makeup</option>
+              <option>mhendi</option>
+              <option>Hair-Rebonding</option>
+              <option>Hair-spa</option>
+              <option>Hair-smoothing</option>
+              <option>Massage</option>
+              <option>Threading</option>
+              <option>Eye Makeup</option>
+            </select>
+
+            <label for="">Service Required:</label> 
+            <select class="form-control" name="methods">
+              <option >Service Method</option>
+              <option>Home Service</option>
+              <option>Parlour Service</option>
+            </select>
+            <p>IF YOU SELECT HOME SERVICE THEN ADD ADDITION CHARGE FOR HOME SERVICE.</p>
+            
+            <label for="#">Date:</label>
+            <div class="date-picker" name="date">
+              <div class="selected-date"></div>
+
+              <div class="dates">
+                <div class="month">
+                  <div class="arrow prev-nth">&#10094</div>
+                  <div class="nth"></div>
+                  <div class="arrow next-nth">&#10095</div>
+                </div>
+
+                <div class="days"></div>
+              </div>
+            </div>
+
+            <button class="btn book_btn mt-3 text-center" type="submit"  >
+              BOOK</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- footer-section -->
+  <div class="container-fluid footer mt-5" style="background-color:rgb(32, 32, 32);">
+    <div class="container">
+      <div class="row">
+        <div class="col mt-5">
+          <hr class=horizontal-line>
+          <h6 style="font-family: sans-serif; font-size:18px; color:#c4c1c1; margin-left:20px;">V@ISHALISALON</h6>
+          <hr class=horizontal-line>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.5278605767553!2d77.38838241456055!3d28.67385238896165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf06ff9fe463f%3A0xa43290514c301487!2sShiv%20Parvati%20Mandir!5e0!3m2!1sen!2sin!4v1622948461901!5m2!1sen!2sin"
+            width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+        <div class="col-md-6 ">
+          <div class="contact-footer">
+            <h5>Contact Us</h5>
+            <p>
+              <i class="fa fa-envelope-o" aria-hidden="true"></i> vaishaliparlour@gmail.com
+            </p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> +91-8806349499
+            </p>
+
+
+            <h5>Stay With Us</h5>
+            <a href="https://www.instagram.com/vaishali_tyagi11/" target="_blank ">
+              <i class="fa fa-instagram social-icon" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/vaishali.tyagi.3388 " target="_blank">
+              <i class="fa fa-facebook social-icon" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/vaishali-tyagi-444611203" target="_blank">
+              <i class="fa fa-linkedin social-icon" aria-hidden="true"></i></a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+    
+
+  <script type="text/javascript">
+    const date_picker_element = document.querySelector('.date-picker');
+    const selected_date_element = document.querySelector('.date-picker .selected-date ');
+    const dates_element = document.querySelector('.date-picker .dates');
+    const nth_element = document.querySelector('.date-picker .dates .month .nth');
+    const next_nth_element = document.querySelector('.date-picker .dates .month .next-nth');
+    const prev_nth_element = document.querySelector('.date-picker .dates .month .prev-nth');
+
+    const days_element = document.querySelector('.date-picker .dates .days');
+    const months = ['January', 'Februrary', 'March', 'April',
+      'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+    let date = new Date();
+    let day = date.getDate();
+    let month = date.getMonth();
+    let year = date.getFullYear();
+
+    let selectedDate = date;
+    let selectedDay = day;
+    let selectedMonth = month;
+    let selectedYear = year;
+
+    nth_element.textContent = months[month] + " " + year;
+    selected_date_element.textContent = formatDate(date);
+
+    populateDates();
+
+    // EventListener
+    date_picker_element.addEventListener('click', toggleDatePicker);
+    next_nth_element.addEventListener('click', goToNextMonth);
+    prev_nth_element.addEventListener('click', goToPrevMonth);
+
+    // function
+    function toggleDatePicker(e) {
+      if (!checkEventPathForClass(e.path, 'dates')) {
+        dates_element.classList.toggle('active');
+      }
+    }
+
+    function goToNextMonth(e) {
+      month++;
+      if (month > 11) {
+        month = 0;
+        year++;
+      }
+      nth_element.textContent = months[month] + " " + year;
+      populateDates();
+    }
+
+    function goToPrevMonth(e) {
+      month--;
+      if (month < 0) {
+        month = 11;
+        year--;
+      }
+      nth_element.textContent = months[month] + " " + year;
+      populateDates();
+    }
+
+    function populateDates(e) {
+      days_element.innerHTML = '';
+      let amount_days = 31;
+      if (month == 1) {
+        amount_days = 28;
+      }
+      for (let i = 0; i < amount_days; i++) {
+        const day_element = document.createElement('div');
+        day_element.classList.add('day');
+        day_element.textContent = i + 1;
+
+        if (selectedDay == (i + 1) && selectedYear == year && selectedMonth == month) {
+          day_element.classList.add('selected');
+        }
+        day_element.addEventListener('click', function () {
+          selectedDate = new Date(year + "-" + (month + 1) + "-" + (i + 1));
+          selectedDay = (i + 1);
+          selectedMonth = month;
+          selectedYear = year;
+          selected_date_element.textContent = formatDate(selectedDate);
+          selected_date_element.dataset.value = selectedDate;
+
+          populateDates();
+        });
+        days_element.appendChild(day_element);
+      }
+    }
+
+    // helper function
+    function checkEventPathForClass(path, selector) {
+      for (let i = 0; i < path.length; i++) {
+        if (path[i].classList && path[i].classList.contains(selector)) {
+          return true;
+        }
+      }
+
+      return false;
+    }
+
+    function formatDate(d) {
+      let day = d.getDate();
+      if (day < 10) {
+        day = '0' + day;
+      }
+
+      let month = d.getMonth() + 1;
+      if (month < 10) {
+        month = '0' + month;
+      }
+
+      let year = d.getFullYear();
+
+      return day + " / " + month + " / " + year;
+    }
+
+    
+    //validation
+     function validation(){
+       var fname = document.book_form.fname;
+       var lname = document.book_form.lname;
+       var phone = document.book_form.phone;
+       var emaill = document.book_form.emaill;
+       var optradio = document.book_form.optradio;
+       var service = document.book_form.service;
+       var methods = document.book_form.methods;
+       var fnameexp = /^[a-zA-Z]{3,15}$/;
+       var lnameexp = /^[a-zA-Z]{3,15}$/;
+       var phoneexp = /^[0-9]{10}$/;
+       var regExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+       if(fname.value.length <=0) {
+         alert("First Name is required"); 
+         fname.focus();
+         return false;
+       }
+       
+       else if(!fnameexp.test(fname.value)){
+         alert('only string value allow and it must be 3 character');
+         return false;
+       }
+
+      else if(lname.value.length <=0) {
+         alert("Last Name is required");
+         lname.focus();
+         return false;
+       }
+
+      
+      else if(!lnameexp.test(lname.value)){
+         alert('only string value allow and it must be 3 character');
+         return false;
+       }
+
+      else if(phone.value.length <=0) {
+         alert("Phone number is required");
+         phone.focus();
+         return false;
+       }
+
+    
+      else if(!phoneexp.test(phone.value)){
+         alert('Please Enter Number and it should be 10 digits');
+         return false;
+       }
+
+     else if(emaill.value.length <=0) {
+         alert("Email is required");
+         emaill.focus();
+         return false;
+       }    
+
+   else if(!regExp.test(emaill.value)){
+      alert("Please enter valid email id.");
+      return false;
+    }
+        
+      else if(optradio.value.length <=0) {
+         alert("please choose anyone perfered contact");
+        //  optradio.focus();
+         return false;
+       }
+
+      else if(service.value =="Select Service") {
+         alert("please select anyone service");
+         service.focus();
+         return false;
+       }
+
+       else if(methods.value =="Service Method") {
+         alert("please select any service Method");
+         methods.focus();
+         return false;
+       }
+
+
+     }
+     
+     
+  </script>
+
+</body>
+
+</html>

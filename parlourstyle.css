@@ -1,0 +1,473 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+ 
+.menubar .nav-item .nav-link{
+    color: #CFCFCF;
+    padding-left:23px;
+    padding-right:29px;
+    text-transform: uppercase;
+    margin-left:50px;
+    font-weight:900;
+}
+
+.menubar .nav-item .nav-link:hover{
+    color:#CC0662;
+}
+
+.carousel-inner img{
+    width:100%;
+    height:100%;
+}
+
+.recommend-service h1 , .why-choose h1{
+    position:relative;
+    font-weight:bold;
+}
+
+.why-choose h1::before{
+    content:"";
+    background-color:#CC0662;
+    position:absolute;
+    width: 40px;
+    height: 10px;
+    margin-top:50px;
+    margin-left: 59px; 
+}
+
+.recommend-service h1::before{
+    content:"";
+    background-color:#CC0662;
+    position:absolute;
+    width: 40px;
+    height: 10px;
+    top:6rem;
+    margin: 2rem 0 0 17%;
+}
+
+.parlour-beauty-service img {
+    position:relative;
+    border: solid #CC0662;
+    transition-duration:3s;
+}
+
+.name-of-service{
+    position: absolute;
+    bottom: 1px;
+    z-index: 1;
+    background-color: white;
+    text-align: center;
+    padding: 10px 6px;
+    opacity: 0.8;
+    left: 18px;
+    width: 200px;
+    color:#CC0662;
+}
+
+.parlour-beauty-service img:hover{
+    transform: scale(1.1);
+}
+
+.horizontal-line{
+    color:white;
+}
+
+.social-icon{
+    color:#CFCFCF;
+    width:40px;
+    height:40px;
+    line-height:23px;
+    border-radius: 100%;
+    background:#e9e9ef;
+    font-size:25px;
+    padding:10px 10px;
+    margin-right:10px;
+    text-align:center;
+}
+
+.social-icon:hover{
+    color:#CC0662;
+}
+
+.contact-footer h5{
+    color:#CFCFCF;
+    text-transform: uppercase;
+    display:inline;
+}
+
+.contact-footer p{
+    color: #CFCFCF;
+    font-size: 20px;
+    margin: 0;
+    line-height: 3;
+}
+
+.about-img img{
+    position:relative;
+    width:500px;
+    height:350px;
+}
+.beauty-about{
+    position: absolute;
+    width: 24rem;
+    height: auto;
+    z-index: 1;
+    top: 18px;
+    left: 25rem;
+    background-color:white;
+    border: 1px solid #CC0662;
+    color: #CC0662;
+    font-weight: 500;
+    padding: 16px;
+}
+
+.shapes{
+    border-bottom: 6rem solid #CC0662;
+	border-left: 14rem solid transparent;
+	border-right: 14rem solid transparent;
+	height: 0;
+	width: 30rem;
+    position:relative;
+}
+
+.heading{
+    position: absolute;
+    transform: rotate(336deg);
+    top: -2px;
+    letter-spacing: 2px;
+    font-style: italic;
+    color: #CC0662;
+}
+
+.heading1{
+    position: absolute;
+    transform: rotate(383deg);
+    top: -2px;
+    left: 295px;
+    letter-spacing: 2px;
+    font-style: italic;
+    color: #CC0662;
+}
+
+/* services */
+
+.service img{
+    border:2px solid #b60457;
+    border-radius:100px;
+    opacity:0.2;
+    transition-duration:1s;
+}
+
+.service img:hover{
+    opacity:0.7;
+    
+}
+
+.service p{
+    color:#b60457;
+    font-weight:bold;
+    text-transform: uppercase;
+} 
+
+.book_link a{
+    border:2px solid #CC0662; 
+    padding:5px 30px;
+    color:#CC0662;
+    font-weight:500;  
+    text-decoration: none; 
+    display:block;
+    max-width:150px;
+    margin:20px auto;
+    border-radius:5px;
+}
+
+.book_link a:hover{
+    color:white;
+    background-color: #b60457;
+}
+
+
+
+/* training page */
+.nav-style{
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 0  0 10px whitesmoke;
+    border-radius:10px;
+}
+.nav-style .nav-item{
+    background-color: #e9e9ef;
+    width: 350px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:5px;
+}
+.nav-style .nav-item .nav-link{
+    color:rgb(44, 43, 43);
+    font-weight:900;
+    letter-spacing: 1px;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+.nav-style .nav-item .nav-link:hover{
+    background-color:rgb(44, 43, 43);
+    color:white;
+}
+
+.nav-style .nav-item .active{
+    background-color: rgb(44, 43, 43);
+    color:white;
+}
+
+.tab-content .container{
+    background-color:rgb(231, 230, 230);
+    margin: 20px 0;
+}
+
+.training{
+    background-image:url("http://www.organicbeautyparlour.com/wp-content/uploads/2016/03/header-image-services-1440x500.jpg");
+    
+}
+.training-page{
+    margin-top: 4rem;
+    margin-bottom:4rem;
+    margin-left:15rem;
+    color:#CC0662;
+   width: 500px;
+}
+
+.book_btn1{
+    border:2px solid #CC0662; 
+     padding:5px 30px;
+     background-color: #CC0662;
+     color:white;
+     font-weight:500;
+}
+
+/* booking_page */
+
+.appointment{
+    height:auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    width:auto;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.appointment-form{
+    width: 400px;
+    margin-left:auto;
+    margin-right:auto;
+    font-weight:bold;
+    margin-bottom:10px;
+    
+    /* background-color:white;
+    padding:30px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px  rgb(255, 255, 255); */
+}
+
+.date-picker{
+    position:relative;
+    width:100%;
+    border-radius:5px;
+    /* border:1px solid rgb(206, 205, 205);
+     */
+    background-color: #f3f3f3;
+    height:40px;
+    max-width:250px;
+    user-select: none;
+}
+
+.date-picker:hover{
+    background-color:#f8f5f5;
+}
+
+.date-picker .selected-date{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:black;
+}
+
+.date-picker .dates{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background-color: white;
+}
+
+.date-picker .dates.active{
+    display:block;
+}
+
+.date-picker .dates .month{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom: 2px solid #EEE;
+}
+
+.date-picker .dates .month .arrow{
+    width:35px;
+    height:35px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#313131;
+    font-size:20px;
+}
+
+.date-picker .dates .month .arrow:hover{
+    background-color: #f3f3f3;
+}
+
+.date-picker .dates .month .arrow:active{
+    background-color:#CC0662;
+}
+
+.date-picker .dates .days{
+    display:grid;
+    grid-template-columns:repeat(7, 1fr);
+    height:200px;
+}
+
+.date-picker .dates .days .day{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#313131;
+}
+
+.date-picker .dates .days .day.selected{
+    background-color:#CC0662;
+}
+
+.book_btn{
+    border:2px solid #CC0662; 
+     padding:5px 30px;
+     color:#CC0662;
+     font-weight:500;
+}
+
+.book_btn:hover{
+    background-color:#CC0662;
+    color:white;
+}
+
+
+/* contact-form */
+
+.contact_heading{
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+    color:#CC0662;
+    margin-top:10px;
+}
+
+.contact_heading::before{
+    position:absolute;
+    content:"";
+    width:30%;
+    height:3px;
+    left:10%;
+    top:25px;
+   background:#b60457;
+}
+
+.contact_heading::after{
+    position:absolute;
+    content:"";
+    width:30%;
+    height:3px;
+    right:10%;
+    top:25px;
+   background:#b60457;
+}
+
+.form-bg {
+    background-image:url("http://www.organicbeautyparlour.com/wp-content/uploads/2016/03/header-image-services-1440x500.jpg");
+    padding: 20px;
+    margin:15px;
+    
+}
+
+/* .info{
+    position:relative;
+}
+
+
+.circle{
+    position: absolute;
+} */
+
+.form {
+    background-color: white !important;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}
+
+.form-con {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #61615e;
+    background: transparent;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s
+}
+
+.button{
+    display: block;
+    padding: 11px 32px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    margin: 30px 0px
+}
+
+.btn-blue {
+    background:transparent;
+    color:#b60457;
+    
+}
+
+.btn-blue:hover{
+    background-color: #b60457;
+    color: #fff;
+    border: 1px solid #b60457; 
+}
+
+/* enroll-form */
+.enroll{
+    max-width:60%;
+    margin:auto;
+    font-family: sans-serif;
+    line-height:40px;
+    border: 1px solid #CC0662;
+    padding: 10px;
+}
