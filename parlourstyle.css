@@ -49,6 +49,7 @@
 position:relative;
 }
 .parlour-beauty-service img {
+	position:relative;
     border: solid #CC0662;
     transition-duration:3s;
 }
