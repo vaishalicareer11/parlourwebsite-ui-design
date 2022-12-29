@@ -45,16 +45,17 @@
     top:6rem;
     margin: 2rem 0 0 17%;
 }
-
+.rel{
+position:relative;
+}
 .parlour-beauty-service img {
-    position:relative;
     border: solid #CC0662;
     transition-duration:3s;
 }
 
 .name-of-service{
     position: absolute;
-    bottom: 1px;
+    bottom: 0px;
     z-index: 1;
     background-color: white;
     text-align: center;
