@@ -56,7 +56,7 @@ position:relative;
 
 .name-of-service{
     position: absolute;
-    bottom: 0px;
+    bottom: 2px;
     z-index: 1;
     background-color: white;
     text-align: center;
